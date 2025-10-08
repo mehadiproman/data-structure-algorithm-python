@@ -1,3 +1,5 @@
+# so these is Big O(n!) example
+
 def generate_permutations(arr, start=0):
     """
     Generates all permutations of the array 'arr'
