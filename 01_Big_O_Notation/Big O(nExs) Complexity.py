@@ -1,21 +1,21 @@
-# def generate_permutations(arr, start=0):
-#     """
-#     Generates all permutations of the array 'arr'
-#     """
-#     if start == len(arr) - 1:
-#         print(arr)  # O(1) per permutation
-#     else:
-#         for i in range(start, len(arr)):
-#             # Swap current index with start
-#             arr[start], arr[i] = arr[i], arr[start]  # O(1)
-#             # Recursively generate permutations for the rest
-#             generate_permutations(arr, start + 1)  # Recursive call
-#             # Swap back to restore original array (backtracking)
-#             arr[start], arr[i] = arr[i], arr[start]  # O(1)
+def generate_permutations(arr, start=0):
+    """
+    Generates all permutations of the array 'arr'
+    """
+    if start == len(arr) - 1:
+        print(arr)  # O(1) per permutation
+    else:
+        for i in range(start, len(arr)):
+            # Swap current index with start
+            arr[start], arr[i] = arr[i], arr[start]  # O(1)
+            # Recursively generate permutations for the rest
+            generate_permutations(arr, start + 1)  # Recursive call
+            # Swap back to restore original array (backtracking)
+            arr[start], arr[i] = arr[i], arr[start]  # O(1)
 
-# # Example usage
-# numbers = [1, 2, 3]
-# generate_permutations(numbers)
+# Example usage
+numbers = [1, 2, 3]
+generate_permutations(numbers)
 
 #------------------------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@
 
 #------------------------------------------------------------------------------------------
 
-def all_cubes(items):
+# def all_cubes(items):
 
-    for item in items:      
-        result=(pow(item, 3))   # O(1)
-        print(result)     
+#     for item in items:      
+#         result=(pow(item, 3))   # O(1)
+#         print(result)     
 
-items = [6, 5]
+# items = [6, 5]
 
-all_cubes(items)
+# all_cubes(items)
 
-# print(x.bit_length())  # shows how many bits are needed to store the number 100
-print(all_cubes(items).bit_length())  # shows how many bits are needed to store 
+# # print(x.bit_length())  # shows how many bits are needed to store the number 100
+# print(all_cubes(items).bit_length())  # shows how many bits are needed to store 
